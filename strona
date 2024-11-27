@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sklep Internetowy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+        .product h3 {
+            margin: 0.5rem 0;
+        }
+        .product p {
+            color: #666;
+        }
+        .product button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .product button:hover {
+            background-color: #218838;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Witamy w naszym sklepie internetowym!</h1>
+    </header>
+
+    <nav>
+        <a href="#">Strona Główna</a>
+        <a href="#">Produkty</a>
+        <a href="#">Kontakt</a>
+        <a href="#">O nas</a>
+    </nav>
+
+    <div class="container">
+        <h2>Nasze produkty</h2>
+        <div class="products">
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Produkt 1">
+                <h3>Produkt 1</h3>
+                <p>Opis produktu 1</p>
+                <button>Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Produkt 2">
+                <h3>Produkt 2</h3>
+                <p>Opis produktu 2</p>
+                <button>Dodaj do koszyka</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/300" alt="Produkt 3">
+                <h3>Produkt 3</h3>
+                <p>Opis produktu 3</p>
+                <button>Dodaj do koszyka</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Sklep Internetowy. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+</body>
+</html>
+
